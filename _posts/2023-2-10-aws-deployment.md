@@ -157,21 +157,56 @@ $ sudo certbot --nginx
 ```
 - Make sure that your domain appears on the list of names to activate HTTPS for
 
-```
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 Plugins selected: Authenticator nginx, Installer nginx
+
 Which names would you like to activate HTTPS for?
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-1: nighthawkcodingsociety.com
-2: csa.nighthawkcodingsociety.com
-3: csp.nighthawkcodingsociety.com
-4: flm.nighthawkcodingsociety.com
+1: coolcodersjava.pw
+2: www.coolcodersjava.pw
+3: ajarcade.duckdns.org
+4: flowhealth.duckdns.org
+5: goatedgroup.duckdns.org
+6: jasj-inventory.duckdns.org
+7: recipies.duckdns.org
+8: ssvgcars.duckdns.org
+9: userapi.duckdns.org
+10: fr0st.ml
+11: www.fr0st.ml
+12: agenda.nighthawkcodescrums.gq
+13: coolcoders.nighthawkcodescrums.gq
+14: escaperoom.nighthawkcodescrums.gq
+15: frost.nighthawkcodescrums.gq
+16: jame.nighthawkcodescrums.gq
+17: lawnmowers.nighthawkcodescrums.gq
+18: loopholegames.nighthawkcodescrums.gq
+19: musicmania.nighthawkcodescrums.gq
+20: nba.nighthawkcodescrums.gq
+21: sadv.nighthawkcodescrums.gq
+22: ssjn.nighthawkcodescrums.gq
+23: stocks.nighthawkcodescrums.gq
+24: striver.nighthawkcodescrums.gq
+25: tngc.nighthawkcodescrums.gq
+26: white.nighthawkcodescrums.gq
+27: workwatch.nighthawkcodescrums.gq
+28: cars.nighthawkcodingsociety.com
+29: dolphin.nighthawkcodingsociety.com
+30: saakd.nighthawkcodingsociety.com
+31: pythonalflask.tk
+32: www.pythonalflask.tk
+33: teambrobro.tk
+34: www.teambrobro.tk
+35: teamcheeseatimetime.tk
+36: www.teamcheeseatimetime.tk
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Select the appropriate numbers separated by commas and/or spaces, or leave input
-blank to select all options shown (Enter 'c' to cancel):    
+blank to select all options shown (Enter 'c' to cancel): # ENTER YOUR CORRESPONDING NUMBER
+
 Cert not yet due for renewal
+
 You have an existing certificate that has exactly the same domains or certificate name you requested and isn't close to expiry.
 (ref: /etc/letsencrypt/renewal/nighthawkcodingsociety.com-0001.conf)
+
 What would you like to do?
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 1: Attempt to reinstall this existing certificate
@@ -190,6 +225,7 @@ Deploying Certificate to VirtualHost /etc/nginx/sites-enabled/nighthawk_society
 Deploying Certificate to VirtualHost /etc/nginx/sites-enabled/nighthawk_csa
 Deploying Certificate to VirtualHost /etc/nginx/sites-enabled/nighthawk_csp
 Deploying Certificate to VirtualHost /etc/nginx/sites-enabled/nighthawk_flm
+
 Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 1: No redirect - Make no further changes to the webserver configuration.
@@ -202,20 +238,24 @@ Traffic on port 80 already redirecting to ssl in /etc/nginx/sites-enabled/nighth
 Traffic on port 80 already redirecting to ssl in /etc/nginx/sites-enabled/nighthawk_csa
 Traffic on port 80 already redirecting to ssl in /etc/nginx/sites-enabled/nighthawk_csp
 Traffic on port 80 already redirecting to ssl in /etc/nginx/sites-enabled/nighthawk_flm
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Your existing certificate has been successfully renewed, and the new certificate
 has been installed.
+
 The new certificate covers the following domains:
 https://nighthawkcodingsociety.com, 
 https://csa.nighthawkcodingsociety.com, 
 https://csp.nighthawkcodingsociety.com, and
 https://flm.nighthawkcodingsociety.com,
+
 You should test your configuration at:
 https://www.ssllabs.com/ssltest/analyze.html?d=nighthawkcodingsociety.com
 https://www.ssllabs.com/ssltest/analyze.html?d=csa.nighthawkcodingsociety.com
 https://www.ssllabs.com/ssltest/analyze.html?d=csp.nighthawkcodingsociety.com
 https://www.ssllabs.com/ssltest/analyze.html?d=flm.nighthawkcodingsociety.com
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 IMPORTANT NOTES:
  - Congratulations! Your certificate and chain have been saved at:
    /etc/letsencrypt/live/nighthawkcodingsociety.com-0001/fullchain.pem
@@ -226,9 +266,9 @@ IMPORTANT NOTES:
    with the "certonly" option. To non-interactively renew *all* of
    your certificates, run "certbot renew"
  - If you like Certbot, please consider supporting our work by:
+
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
-```
 
 - Conclude this process by running ``` sudo certbot --nginx ```  and testing https://mydomain
 - Replace "mydomain" with the domain you have previously selected
